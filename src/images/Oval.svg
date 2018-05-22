@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1D3EDE" offset="0%"></stop>
+            <stop stop-color="#01E4F8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Основной-концепт" transform="translate(-692.000000, -2505.000000)">
+            <g id="О-компании" transform="translate(403.000000, 2230.000000)">
+                <g id="Group-18" transform="translate(260.000000, 220.000000)">
+                    <g id="1" transform="translate(29.000000, 45.000000)">
+                        <g id="Icon" transform="translate(0.000000, 10.000000)">
+                            <g id="Oval">
+                                <circle id="Oval-2" fill="#1D3EDE" opacity="0.05" cx="20" cy="20" r="20"></circle>
+                                <circle id="Oval-2-Copy" fill="url(#linearGradient-1)" opacity="0.5" cx="20" cy="20" r="10"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
