@@ -4,9 +4,12 @@
     width 84.7%
     margin 0 0 0 auto
     position relative
+  &__slider
+    position relative
+    overflow hidden
   &__slide
     padding 3.7rem 0
-    background-size: 75.5% auto
+    background-size: contain
     background-position: right top
     background-repeat: no-repeat
   &__number
@@ -40,3 +43,16 @@
       width 7.8em
       height 7.8em
       margin-right 2rem
+  &__buttons
+    display flex
+    position absolute
+    right 0
+    bottom 0
+    z-index 1
+  &__button
+    padding 1.5rem 2rem
+    background-color #fff
+    cursor pointer
+    outline none
+    &.swiper-button-disabled svg
+      opacity 0.2
