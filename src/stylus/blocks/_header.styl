@@ -4,6 +4,7 @@
   &__top
     display flex
     align-items center
+    margin-bottom 1.8rem
   &__logo
     margin-right 7.3rem
   &__email
@@ -22,6 +23,19 @@
     letter-spacing: .15rem
     &:last-child
       margin-right 0
+  &__phones
+    position relative
+    transform: translateY(-12%)
+    margin-right 2rem
+  &__country
+    font-size: .8rem
+    font-weight: 300
+    opacity 0.69
+    margin-bottom 0.2rem
+  &__phone
+    font-size: 1.2rem
+    letter-spacing: .15rem
+    opacity 0.7
   &__callback
     position relative
     font-size: 1.2rem
@@ -43,6 +57,33 @@
       color white
       &::after
         background-color transparent
+  &__menu
+    display flex
+    justify-content flex-end
+    align-items center
+  &__dropdown
+    width 46rem
+    background-image: linear-gradient(135deg, #1D3EDE, #01E4F8)
+    border-radius: 4px
+    margin-right 2rem
+    cursor pointer
+    &:last-child
+      margin-right 0
+  &__dropdownText
+    display inline-flex
+    align-items center
+    justify-content space-between
+    width calc(100% - 2px)
+    font-weight: 600
+    font-size: 1.2rem
+    letter-spacing: .15rem
+    margin 1px
+    border-radius 3px
+    background-color #fff
+    padding 1.3rem 2.8rem 1.2rem
+    & svg
+      width 2rem
+      height 2rem
 .Logo
   & svg
     width 8.5rem

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <defs>
+    <linearGradient id="dropdowna" x1="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1D3EDE"/>
+      <stop offset="100%" stop-color="#01E4F8"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="10" cy="10" r="10" fill="url(#dropdowna)" opacity=".5"/>
+    <path fill="#FFF" d="M13.45 7.5L10 11.23 6.55 7.5 5.5 8.635 10 13.5l4.5-4.865z"/>
+  </g>
+</svg>

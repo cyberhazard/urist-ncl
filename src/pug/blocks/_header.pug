@@ -7,5 +7,12 @@ header.Header
         a.Header__link(href="#") Контакты
       .Header__email info@ncl-corporate.ru
       .Header__phones
+        .Header__country Россия
+        .Header__phone +7 (951) 069-04-10
       button.Header__callback(data-text="Заказать звонок")
     .Header__bottom
+      nav.Header__menu
+        .Header__dropdown: .Header__dropdownText Регистрация и обслуживание иностранных компаний
+          include ../../images/dropdown.svg
+        .Header__dropdown: .Header__dropdownText Международные юридические услуги частным лицам
+          include ../../images/dropdown.svg
