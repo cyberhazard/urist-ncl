@@ -1,0 +1,48 @@
+
+.Header
+  padding-top 7rem
+  &__top
+    display flex
+    align-items center
+  &__logo
+    margin-right 7.3rem
+  &__email
+    font-size: 1.1rem
+    letter-spacing: .138rem
+    opacity 0.5
+    margin-right 3.8rem
+  &__links
+    flex-grow: 1
+    display flex
+    align-items center
+  &__link
+    font-size: 1.2rem
+    color #000
+    margin-right 4.6rem
+    letter-spacing: .15rem
+    &:last-child
+      margin-right 0
+  &__callback
+    position relative
+    font-size: 1.2rem
+    color #1D3EDE
+    border-radius 2px
+    border none
+    background-image: linear-gradient(135deg, #1D3EDE, #01E4F8)
+    cursor pointer
+    transition color .3s
+    letter-spacing: .15rem
+    &::after
+      display inline-block
+      content attr(data-text)
+      background-color #fff
+      transition background-color .3s
+      padding 1.2rem 2.2rem 1.1rem
+      margin 1px
+    &:hover
+      color white
+      &::after
+        background-color transparent
+.Logo
+  & svg
+    width 8.5rem
