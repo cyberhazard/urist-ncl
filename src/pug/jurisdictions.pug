@@ -1,0 +1,17 @@
+extends layouts/_main.pug
+
+block vars
+  - const title = 'Юрисдикции'
+
+block content
+  .g-wrapper
+    .Breadcrumbs
+      a.Breadcrumbs__link(href="#") Главная
+      | >
+      a.Breadcrumbs__link(href="#") Новости
+      | >
+      a.Breadcrumbs__link(href="#") Страница юрисдикции
+    .Page__heading
+      include ../images/uk.svg
+      | Страница юрисдикции
+  include blocks/_j-Services.pug
