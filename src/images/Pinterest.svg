@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Pinterest</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1D3EDE" offset="0%"></stop>
+            <stop stop-color="#01E4F8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Контакты" transform="translate(-1111.000000, -1787.000000)">
+            <g id="Group-23" transform="translate(0.000000, 1179.000000)">
+                <g id="2nd.Row" transform="translate(406.000000, 550.000000)">
+                    <g id="Col.3" transform="translate(569.000000, 0.000000)">
+                        <g id="Social-Icons" transform="translate(0.000000, 58.000000)">
+                            <g id="Pinterest" transform="translate(136.000000, 0.000000)">
+                                <rect id="BG" fill="#FFFFFF" x="0" y="0" width="48" height="48" rx="4"></rect>
+                                <g id="logo-pinterest" transform="translate(16.000000, 16.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                                    <path d="M8,0 C3.6,0 0,3.6 0,8 C0,11.4 2.1,14.3 5.1,15.4 C5,14.8 5,13.8 5.1,13.1 C5.2,12.5 6,9.1 6,9.1 C6,9.1 5.8,8.7 5.8,8 C5.8,6.9 6.5,6 7.3,6 C8,6 8.3,6.5 8.3,7.1 C8.3,7.8 7.9,8.8 7.6,9.8 C7.4,10.6 8,11.2 8.8,11.2 C10.2,11.2 11.3,9.7 11.3,7.5 C11.3,5.6 9.9,4.2 8,4.2 C5.7,4.2 4.4,5.9 4.4,7.7 C4.4,8.4 4.7,9.1 5,9.5 C5,9.7 5,9.8 5,9.9 C4.9,10.2 4.8,10.7 4.8,10.8 C4.8,10.9 4.7,11 4.5,10.9 C3.5,10.4 2.9,9 2.9,7.8 C2.9,5.3 4.7,3 8.2,3 C11,3 13.1,5 13.1,7.6 C13.1,10.4 11.4,12.6 8.9,12.6 C8.1,12.6 7.3,12.2 7.1,11.7 C7.1,11.7 6.7,13.2 6.6,13.6 C6.4,14.3 5.9,15.2 5.6,15.7 C6.4,15.9 7.2,16 8,16 C12.4,16 16,12.4 16,8 C16,3.6 12.4,0 8,0 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
