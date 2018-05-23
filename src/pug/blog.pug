@@ -1,0 +1,35 @@
+extends layouts/_main.pug
+
+block vars
+  - const title = 'Блог'
+
+block content
+  .g-wrapper
+    section.SectionTop
+      .SectionTop__left
+        .SectionTop__title НАШ БЛОГ
+        .SectionTop__about Наши офисы находятся в 2 крупных городах.
+      .SectionTop__right
+        form.SectionTop__form
+          .SectionTop__form_inner
+            .SectionTop__form_title Оставьте заявку:
+            .SectionTop__form_elem
+              .SectionTop__form_elem_inner
+                input(type="text" name="name" placeholder="Ваше имя").SectionTop__form_input
+            .SectionTop__form_elem
+              .SectionTop__form_elem_inner
+                input(type="tel" name="phone" placeholder="Ваш телефон").SectionTop__form_input
+            .SectionTop__form_elem
+              .SectionTop__form_elem_inner
+                textarea(type="text" name="text" placeholder="Ваше сообщение").SectionTop__form_textarea
+            button(type="submit").SectionTop__form_button Отправить
+  section.Blog
+    .g-wrapper
+      .Blog__content
+        .Blog__buttons
+          .Blog__button.Blog__button_active Новости
+          .Blog__button Анонсы
+          .Blog__button Проекты
+          .Blog__button В мире
+        .Blog__news
+          include blocks/_i-Blog.pug
