@@ -1,0 +1,107 @@
+.i-News
+  padding 6rem 0 9.6rem
+  &__head
+    display flex
+    justify-content space-between
+    align-items flex-start
+    margin-bottom 3.4rem
+    &_left
+      margin-right 9rem
+  &__back
+    display flex
+    justify-content flex-start
+    align-items center
+    margin-bottom 1.6rem
+    & svg
+      margin-right 2rem
+    & span
+      font-weight 300
+      font-size 1.2rem
+      opacity 0.8
+      color black
+  &__title
+    display inline-block
+    position relative
+    font-weight 600
+    font-size 2.4rem
+    color #023753
+    margin-bottom 3rem
+    &:after
+      content ''
+      position absolute
+      left 0
+      bottom 0.4rem
+      width 100%
+      height 0.1rem
+      background #023753
+  &__text
+    font-size 1.4rem
+    font-weight 300
+    letter-spacing 0.117rem
+    &_margin
+      margin-bottom 1.2rem
+  &__person
+    max-width 29.4rem
+    width 100%
+    padding 4rem 4rem 1.8rem 4.6rem
+    text-align center
+    border 1px solid #D4D4D4
+  &__name
+    font-size 1.6rem
+    margin-bottom 1rem
+    color #050D31
+  &__photo
+    max-width 15.8rem
+    border-radius 8px
+    width 100%
+    object-fit cover
+  &__wrap
+    position relative
+    margin-bottom 1.4rem
+    &:after
+      content ''
+      left -1rem
+      top -2rem
+      z-index -1
+      width 6.6rem
+      height 6.6rem
+      background url('../../images/oval-detail.svg') center center/contain no-repeat
+      position absolute
+  &__block
+    margin-bottom 3.4rem
+  &__descript
+    font-size 1.2rem
+    font-weight 300
+    line-height 1.5rem
+    letter-spacing 0.15rem
+  &__subtitle
+    font-size 1.6rem
+    font-weight 500
+    color #023753
+    margin-bottom 2rem
+  &__buttons
+    max-width 84.4rem
+    display flex
+    justify-content flex-start
+    align-items stretch
+    margin-left 2rem
+    margin-bottom 3rem
+  &__button
+    width 100%
+    text-align center
+    font-size 1.2rem
+    color black
+    background rgba(251,251,251,0.83)
+    text-align center
+    padding 1.2rem 1rem
+    cursor pointer
+    transition 0.3s
+    &_active
+      color white
+      background #D0D0D0
+  &__slide
+    display none
+    &_active
+      display block
+
+

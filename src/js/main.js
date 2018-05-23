@@ -10,3 +10,19 @@ void function() {
     },
   })
 }()
+
+
+const detailNewsButtons = () => {
+  if(!document.querySelector('.i-News__buttons')) return null
+  const tabs = [...document.querySelectorAll('.i-News__button')]
+  const contents = [...document.querySelectorAll('.i-News__slide')]
+  tabs.forEach((tab,i)=>{
+    tab.onclick = ({target}) =>{
+      tabs.forEach(tab=>tab.classList.remove('i-News__button_active'))
+      target.classList.add('i-News__button_active')
+      contents.forEach(el=>el.classList.remove('i-News__slide_active'))
+      contents[tabs.findIndex(el=>el===target)].classList.add('i-News__slide_active')
+    }
+  })
+}
+detailNewsButtons();
