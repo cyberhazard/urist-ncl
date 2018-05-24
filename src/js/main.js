@@ -52,3 +52,14 @@ const stickySidebar = () => {
 
 }
 stickySidebar();
+
+const mobileMenu = () => {
+  const hamburger = document.querySelector('.Hamburger');
+  const close = document.querySelector('.i-Menu__close');
+  const menu = document.querySelector('.i-Menu');
+  const items = [...document.querySelectorAll('.i-Menu__item')];
+  items.forEach( el => el.onclick = () => menu.style.transform = '');
+  hamburger.onclick = () => (menu.style.transform = 'translateY(100%)', document.body.style.overflow='hidden')
+  close.onclick = () => (menu.style.transform = '', document.body.style.overflow='')
+}
+mobileMenu()
