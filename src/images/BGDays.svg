@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="197px" height="197px" viewBox="0 0 197 197" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1D3EDE" offset="0%"></stop>
+            <stop stop-color="#01E4F8" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="9" y="12" width="169" height="169" rx="84.5"></rect>
+        <filter x="-13.0%" y="-11.8%" width="126.0%" height="126.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="18" y="20" width="152" height="152" rx="76"></rect>
+        <filter x="-14.5%" y="-13.2%" width="128.9%" height="128.9%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Страница-юрисдикции" transform="translate(-416.000000, -1683.000000)">
+            <g id="Group-12" transform="translate(406.000000, 1683.000000)">
+                <g id="Group" transform="translate(15.000000, 0.000000)">
+                    <g id="Group-17">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Rectangle-2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                            <rect stroke="url(#linearGradient-1)" stroke-width="1" x="9.5" y="12.5" width="168" height="168" rx="84"></rect>
+                        </g>
+                        <path d="M95.0602372,160.452473 C168.915878,133.948787 172.527148,113.557184 161.115942,98.7779023 C149.704737,83.9986207 53.8896955,21 29.379548,21 C4.86940042,21 -15,40.9050316 -15,65.4591324 C-15,90.0132333 21.2045963,186.956158 95.0602372,160.452473 Z" id="Oval-2-Copy" fill="url(#linearGradient-1)" transform="translate(75.500000, 93.000000) rotate(92.000000) translate(-75.500000, -93.000000) "></path>
+                        <path d="M140.627967,165.578793 C212.851439,139.811321 216.382901,119.986151 205.223877,105.617405 C194.064854,91.248659 100.367271,30 76.3987845,30 C52.4302976,30 33,49.3521141 33,73.2241565 C33,97.096199 68.4044947,191.346265 140.627967,165.578793 Z" id="Oval-2-Copy-6" fill="url(#linearGradient-1)" opacity="0.0546308877" transform="translate(121.500000, 100.000000) rotate(-90.000000) translate(-121.500000, -100.000000) "></path>
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Rectangle-2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-5"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
