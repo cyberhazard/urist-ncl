@@ -2,7 +2,7 @@
   .i-Menu__close
     include ../../images/cross.svg
   .g-wrapper
-    .i-Menu__wrapper
+    .i-Menu__wrapper.i-Menu__desk
       .i-Menu__top
         .i-Menu__left
           .i-Menu__title МЕНЮ
@@ -45,3 +45,25 @@
           .Footer__title Навигация
           a(href="#").Footer__link Наш блог
           a(href="#").Footer__link О компании
+
+    .i-Menu__mobile
+      .i-Menu__mobile_header
+         a(href="#").i-Menu__mobile__logo
+          include ../../images/logo-white.svg
+      .i-Menu__mobile_navigations
+        .i-Menu__mobile_title Навигация:
+        a(href="#").i-Menu__mobile_nav Юридическим лицам
+        a(href="#").i-Menu__mobile_nav Частным лицам
+      .i-Menu__mobile_probems
+        a(href="#").i-Menu__mobile_problem Регистрация и обслуживание иностранных компаний
+        a(href="#").i-Menu__mobile_problem Международные юридические услуги частным лицам
+      form.SectionTop__form.i-Menu__form
+        .SectionTop__form_inner.i-Menu__form_inner
+          .SectionTop__form_title.i-Menu__form_title Оставьте заявку:
+          .SectionTop__form_elem.i-Menu__form_elem
+            input(type="text" name="name" placeholder="Ваше имя").SectionTop__form_input.i-Menu__form_input
+          .SectionTop__form_elem.i-Menu__form_elem
+            input(type="tel" name="phone" placeholder="Ваш телефон").SectionTop__form_input.i-Menu__form_input
+          .SectionTop__form_elem.i-Menu__form_elem
+            textarea(type="text" name="text" placeholder="Ваше сообщение").SectionTop__form_textarea.i-Menu__form_textarea
+          button(type="submit").SectionTop__form_button.i-Menu__form_button Отправить

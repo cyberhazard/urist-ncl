@@ -13,6 +13,7 @@
     font-size: 1.2rem
     letter-spacing: .15rem
     color black
+    z-index 10
     & svg
       margin-left 1rem
   &__socials
@@ -33,3 +34,17 @@
     font-size: 1.2rem
     letter-spacing: .15rem
     color black
+
+@media (max-width 1000px)
+  .Decor
+    &__research
+      left 2rem
+    &__socials
+      right 2rem
+
+@media (max-width 667px)
+  .Decor
+    &__research
+      left 0.4rem
+    &__socials
+      right 0.4rem

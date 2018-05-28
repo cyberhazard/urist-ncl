@@ -63,3 +63,23 @@ const mobileMenu = () => {
   close.onclick = () => (menu.style.transform = '', document.body.style.overflow='')
 }
 mobileMenu()
+
+
+
+const openTypicalMenu = function(){
+  if(!document.querySelector('.Typical__box_wrap')) return null
+  const wrapper = document.querySelectorAll('.Typical__menu_box');
+  const header = document.querySelector('.Typical__menu_box .Typical__label');
+  const height = header.clientHeight;
+
+  wrapper.forEach(e => {
+    e.style.height = height + 'px';
+    e.onclick = () => {
+      if(e.classList.contains('Typical__menu_box_active')) e.style.height = height + 'px';
+      else e.style.height = e.scrollHeight + 'px';
+      e.classList.toggle('Typical__menu_box_active');
+    }
+  })
+  //wrapper[0].style.height = wrapper[0].scrollHeight + 'px';
+}
+openTypicalMenu();
