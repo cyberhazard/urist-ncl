@@ -51,9 +51,8 @@
     margin-bottom 1rem
     color #050D31
   &__photo
-    max-width 15.8rem
+    width 15.8rem
     border-radius 8px
-    width 100%
     object-fit cover
   &__wrap
     position relative
@@ -105,3 +104,12 @@
       display block
 
 
+@media (max-width 1000px)
+  .i-News
+    &__wrap
+      &:after
+        left -2.4rem
+        top -2.4rem
+    &__head
+      &_left
+        margin-right 4rem
