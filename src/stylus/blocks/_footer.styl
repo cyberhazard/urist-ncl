@@ -81,6 +81,7 @@
 
 @media (max-width 1000px)
   .Footer
+    padding 4rem 0 5rem
     &__col
       margin-right 0.6rem
     &__social
@@ -98,4 +99,51 @@
 
   .Footer .g-wrapper
     max-width none
+
+@media (max-width 667px)
+  .Footer
+
+    &__col
+      &:not(:first-child)
+        display none
+    &__bottom
+      &_col
+        text-align center
+        &:nth-child(1)
+          order 2
+        &:nth-child(2)
+          order 1
+          margin-bottom 3rem
+      &_right
+        flex-wrap wrap
+    &__title
+      margin-bottom 3.4rem
+      font-size 1.2rem
+    &__socials
+      justify-content center
+    &__social
+      width auto
+      margin-right 1.4rem
+      &:last-child
+        margin-right 0
+    &__subscribe
+      justify-content center
+    &__link
+      width 100%
+      order 2
+      text-align center
+      font-size 1rem
+    &__pays
+      width 100%
+      order 1
+      justify-content center
+      margin-bottom 4rem
+    &__bottom
+      margin-bottom 2rem
+    &__inform
+      flex-wrap wrap
+    &__input
+      font-size 1rem
+  .Footer__bottom_right .Footer__bottom_col
+    width 100%
 
