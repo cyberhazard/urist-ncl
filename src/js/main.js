@@ -83,3 +83,95 @@ const openTypicalMenu = function(){
   //wrapper[0].style.height = wrapper[0].scrollHeight + 'px';
 }
 openTypicalMenu();
+
+var modal = new tingle.modal({
+  stickyFooter: false,
+  closeMethods: ['overlay', 'button', 'escape'],
+  closeLabel: "Close",
+  cssClass: ['call', 'modal']
+});
+
+var callBackWrap = () => {
+  return`
+        <form class="SectionTop__form">
+          <div class="SectionTop__form_inner">
+            <div class="SectionTop__form_title">Оставьте заявку:</div>
+            <div class="SectionTop__form_elem">
+              <div class="SectionTop__form_elem_inner">
+                <input class="SectionTop__form_input" type="text" name="name" placeholder="Ваше имя"/>
+              </div>
+            </div>
+            <div class="SectionTop__form_elem">
+              <div class="SectionTop__form_elem_inner">
+                <input class="SectionTop__form_input" type="tel" name="phone" placeholder="Ваш телефон"/>
+              </div>
+            </div>
+            <div class="SectionTop__form_elem">
+              <div class="SectionTop__form_elem_inner">
+                <textarea class="SectionTop__form_textarea" type="text" name="text" placeholder="Ваше сообщение"></textarea>
+              </div>
+            </div>
+            <button class="SectionTop__form_button" type="submit">Отправить</button>
+          </div>
+        </form>
+    `
+};
+
+var callBack = function(){
+const callBackButton = Array.prototype.slice.call(document.querySelectorAll('.callback'));
+if(!callBackButton) return null;
+callBackButton.forEach((el) => el.onclick = function(e){
+  e.preventDefault();
+  modal.setContent(callBackWrap());
+  modal.open();
+})
+}
+callBack();
+
+const team = [
+  {
+    id:0,
+    name: 'Nicos Clerides',
+    role: 'Chairman and Head, Global Asset Management and Legal',
+    text:'Sir Christopher Pissarides is an external adviser with NCL Corporate Services. He is the Regius Professor of Economics at the London School of Economics, a Professor of European Studies at the University of Cyprus and Chairman of the Council of National Economy of the Republic of Cyprus, and the Helmut & Anna Pao Sohmen Professor-at-Large of the Hong Kong University of Science and Technology. Sir Christopher was awarded the 2010 Nobel Prize in Economics for his work in the economics of markets with frictions. Prior to that, in 2005, he became the first European economist to win the IZA Prize in Labor Economics. He is frequently quoted in the press on issues concerning the Eurozone and the future of European integration. He is an elected Fellow of the British Academy, the Academy of Athens, the Academia Europaea and several other learned societies, and he is a Lifetime Honorary Member of the American Economic Association. In 2011 he served as the President of the European Economic Association. In 2011 he received the Grand Cross of the Republic of Cyprus, the highest honour of the Republic. He was knighted in 2013.'
+  },
+  {
+    id:1,
+    name: 'Nicos Clerides1',
+    role: 'Chairman and Head, Global Asset Management and Legal',
+    text:'Sir Christopher Pissarides is an external adviser with NCL Corporate Services. He is the Regius Professor of Economics at the London School of Economics, a Professor of European Studies at the University of Cyprus and Chairman of the Council of National Economy of the Republic of Cyprus, and the Helmut & Anna Pao Sohmen Professor-at-Large of the Hong Kong University of Science and Technology. Sir Christopher was awarded the 2010 Nobel Prize in Economics for his work in the economics of markets with frictions. Prior to that, in 2005, he became the first European economist to win the IZA Prize in Labor Economics. He is frequently quoted in the press on issues concerning the Eurozone and the future of European integration. He is an elected Fellow of the British Academy, the Academy of Athens, the Academia Europaea and several other learned societies, and he is a Lifetime Honorary Member of the American Economic Association. In 2011 he served as the President of the European Economic Association. In 2011 he received the Grand Cross of the Republic of Cyprus, the highest honour of the Republic. He was knighted in 2013.'
+  },
+  {
+    id:2,
+    name: 'Nicos Clerides2',
+    role: 'Chairman and Head, Global Asset Management and Legal',
+    text:'Sir Christopher Pissarides is an external adviser with NCL Corporate Services. He is the Regius Professor of Economics at the London School of Economics, a Professor of European Studies at the University of Cyprus and Chairman of the Council of National Economy of the Republic of Cyprus, and the Helmut & Anna Pao Sohmen Professor-at-Large of the Hong Kong University of Science and Technology. Sir Christopher was awarded the 2010 Nobel Prize in Economics for his work in the economics of markets with frictions. Prior to that, in 2005, he became the first European economist to win the IZA Prize in Labor Economics. He is frequently quoted in the press on issues concerning the Eurozone and the future of European integration. He is an elected Fellow of the British Academy, the Academy of Athens, the Academia Europaea and several other learned societies, and he is a Lifetime Honorary Member of the American Economic Association. In 2011 he served as the President of the European Economic Association. In 2011 he received the Grand Cross of the Republic of Cyprus, the highest honour of the Republic. He was knighted in 2013.'
+  },
+  {
+    id:3,
+    name: 'Nicos Clerides3',
+    role: 'Chairman and Head, Global Asset Management and Legal',
+    text:'Sir Christopher Pissarides is an external adviser with NCL Corporate Services. He is the Regius Professor of Economics at the London School of Economics, a Professor of European Studies at the University of Cyprus and Chairman of the Council of National Economy of the Republic of Cyprus, and the Helmut & Anna Pao Sohmen Professor-at-Large of the Hong Kong University of Science and Technology. Sir Christopher was awarded the 2010 Nobel Prize in Economics for his work in the economics of markets with frictions. Prior to that, in 2005, he became the first European economist to win the IZA Prize in Labor Economics. He is frequently quoted in the press on issues concerning the Eurozone and the future of European integration. He is an elected Fellow of the British Academy, the Academy of Athens, the Academia Europaea and several other learned societies, and he is a Lifetime Honorary Member of the American Economic Association. In 2011 he served as the President of the European Economic Association. In 2011 he received the Grand Cross of the Republic of Cyprus, the highest honour of the Republic. He was knighted in 2013.'
+  },
+]
+
+const teamWrap = ({name,role,text}) => {
+  return`
+    <div class="Team__modal">
+      <div class="Team__modal_name">${name}</div>
+      <div class="Team__modal_role">${role}</div>
+      <div class="Team__modal_text">${text}</div>
+    </div>
+  `
+}
+
+var teamHandle = function(){
+  const readButtons = document.querySelectorAll('.i-Team__more');
+  if(!readButtons) return null;
+  readButtons.forEach((el) => el.onclick = function(e){
+    e.preventDefault();
+    modal.setContent(teamWrap(team.find(member => member.id == el.dataset.id )));
+    modal.open();
+  })
+}
+teamHandle();
