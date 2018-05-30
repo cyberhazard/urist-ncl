@@ -1,4 +1,3 @@
-
 .Header
   padding-top 7rem
   position relative
@@ -90,3 +89,37 @@
 .Logo
   & svg
     width 8.5rem
+
+@media (max-width 1000px)
+  .Header
+    &__logo
+      margin-right 1.6rem
+    &__link
+      margin-right 1rem
+    &__email
+      display none
+@media (max-width 667px)
+  .Header
+    &__menu
+      display none
+    &__phone
+      margin-bottom 0
+    &__email
+      display block
+      margin-right 0
+    &__phones
+      margin-right 0
+    &__links
+      display none
+    &__top
+      flex-wrap wrap
+    &__phone
+      width 100%
+      display flex
+      justify-content space-between
+      align-items center
+      margin-bottom 1.6rem
+    &__callback
+      margin 0 auto
+  body > div.Wrapper > header > div.g-wrapper
+    max-width none
