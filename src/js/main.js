@@ -175,3 +175,17 @@ var teamHandle = function(){
   })
 }
 teamHandle();
+
+void function secondaryMenu() {
+  const buttons = [...document.querySelectorAll('.Header__dropdown')];
+  if (buttons.length === 0) return null;
+  const menus = [...document.querySelectorAll('.SecodaryMenu')];
+  buttons.forEach((button, index) => button.onclick = (e) => {
+    e.stopPropagation();
+    menus.forEach(menu => menu != menus[index] && menu.classList.remove('active'))
+    menus[index].classList.toggle('active')
+    if(menus[index].classList.contains('active')) (document.body.onclick = () => (menus[index].classList.remove('active'), document.body.onclick = ''))
+    else (document.body.onclick = '')
+  })
+  menus.forEach(menu => menu.querySelector('.SecodaryMenu__container').onblur = () => menu.classList.remove('active'))
+}()
