@@ -58,6 +58,12 @@
       color white
       &::after
         background-color transparent
+  &__mobile
+    display flex
+    width 100%
+  &__contacts
+    display flex
+    align-items center
   &__menu
     display flex
     justify-content flex-end
@@ -100,6 +106,8 @@
       display none
 @media (max-width 667px)
   .Header
+    &__contacts
+      display block
     &__menu
       display none
     &__phone
@@ -111,9 +119,11 @@
       margin-right 0
     &__links
       display none
+    &__email
+      margin-bottom 1rem
     &__top
       flex-wrap wrap
-    &__phone
+    &__mobile
       width 100%
       display flex
       justify-content space-between

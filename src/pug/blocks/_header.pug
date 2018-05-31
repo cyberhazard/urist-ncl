@@ -2,14 +2,16 @@ header.Header
   include _secondaryMenu.pug
   .g-wrapper
     .Header__top
-      a.Logo.Header__logo(href="/"): include ../../images/logo.svg
-      nav.Header__links
-        a.Header__link(href="#") О компании
-        a.Header__link(href="#") Контакты
-      .Header__email info@ncl-corporate.ru
-      .Header__phones
-        .Header__country Россия
-        .Header__phone +7 (951) 069-04-10
+      .Header__mobile
+        a.Logo.Header__logo(href="/"): include ../../images/logo.svg
+        nav.Header__links
+          a.Header__link(href="#") О компании
+          a.Header__link(href="#") Контакты
+        .Header__contacts
+          .Header__email info@ncl-corporate.ru
+          .Header__phones
+            .Header__country Россия
+            .Header__phone +7 (951) 069-04-10
       button.Header__callback.callback(data-text="Заказать звонок")
     .Header__bottom
       nav.Header__menu
