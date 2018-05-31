@@ -27,6 +27,22 @@ const detailNewsButtons = () => {
 }
 detailNewsButtons();
 
+const blogButtons = () => {
+  if(!document.querySelector('.Blog__buttons')) return null
+  const tabs = [...document.querySelectorAll('.Blog__button')]
+  const contents = [...document.querySelectorAll('.i-Blog__hidden')]
+  tabs.forEach((tab,i)=>{
+    tab.onclick = ({target}) =>{
+      tabs.forEach(tab=>tab.classList.remove('Blog__button_active'))
+      target.classList.add('Blog__button_active')
+      contents.forEach(el=>el.classList.remove('i-Blog__hidden_active'))
+      contents[tabs.findIndex(el=>el===target)].classList.add('i-Blog__hidden_active')
+    }
+  })
+}
+blogButtons();
+
+
 
 const stickySidebar = () => {
   if(!document.querySelector('.Typical__sidebar')) return null
