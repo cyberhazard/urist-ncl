@@ -93,20 +93,6 @@ const stickySidebar = () => {
     label.nextElementSibling.classList.add('Typical__active')
   })
 
-
-
-  // const boxes = [...document.querySelectorAll('.Typical__box')];
-  // const containers = [...document.querySelectorAll('.Typical__container')];
-  // containers[0].style.height = containers[0].querySelector('.Typical__links').clientHeight + 24 + 'px';
-
-  // boxes.forEach(box => box.onclick = () => {
-  //   const content = box.querySelector('.Typical__links');
-  //   const container = box.querySelector('.Typical__container');
-  //   containers.forEach(c => {
-  //     c.style.height = '';
-  //   });
-  //   container.style.height = content.clientHeight + 'px'
-  // })
   var sidebar = new StickySidebar('.Typical__sidebar', {
     containerSelector: '.Typical__wrapper',
     innerWrapperSelector: '.Typical__sidebar_inner',
