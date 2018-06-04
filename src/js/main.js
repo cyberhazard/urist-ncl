@@ -31,7 +31,7 @@ const callBackFormSend = () => {
   forms.forEach(form => {
     form.onsubmit = (e) => {
       e.preventDefault();
-      sendMail(form).then(_ => (alertify.success("Ваша заявка отправленна"), document.querySelector('.call__form').reset()))
+      sendMail(form).then(_ => (alertify.success("Ваша заявка отправленна"), form.reset()))
     }
   })
 
