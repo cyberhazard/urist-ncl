@@ -113,8 +113,8 @@ const mobileMenu = () => {
   const menu = document.querySelector('.i-Menu');
   const items = [...document.querySelectorAll('.i-Menu__item')];
   items.forEach( el => el.onclick = () => menu.style.transform = '');
-  hamburger.onclick = () => (menu.style.transform = 'translateY(100%)', document.body.style.overflow='hidden')
-  close.onclick = () => (menu.style.transform = '', document.body.style.overflow='')
+  hamburger.onclick = () => (menu.style.transform = 'translateY(100%)', document.body.style.overflow='hidden', menu.style.opacity = '1')
+  close.onclick = () => (menu.style.transform = '', document.body.style.overflow='' , menu.style.opacity = '')
 }
 mobileMenu()
 
