@@ -12,6 +12,45 @@ void function() {
 }()
 
 
+var sendMail = function sendMail(selector) {
+  return fetch('/mail.php', {
+    method: 'POST',
+    body: new FormData(selector)
+  }).then(r => {
+    if(r.status != "200") throw Error(r.statusText)
+  }).catch(function (error) {
+    alertify.error("Ошибка. Повторите отправку позже");
+    throw Error(error)
+    modal.close()
+  });
+};
+
+const callBackFormSend = () => {
+  if(!document.querySelector('.SectionTop__form')) return null
+  const forms = document.querySelectorAll('.SectionTop__form');
+  forms.forEach(form => {
+    form.onsubmit = (e) => {
+      e.preventDefault();
+      sendMail(form).then(_ => (alertify.success("Ваша заявка отправленна"), document.querySelector('.call__form').reset()))
+    }
+  })
+
+};
+callBackFormSend();
+
+const modalSend = () => {
+  if(!document.querySelector('.SectionTop__form')) return null
+  const forms = document.querySelectorAll('.SectionTop__form');
+  forms.forEach(form => {
+    form.onsubmit = (e) => {
+      e.preventDefault();
+      sendMail(form).then(_ => (alertify.success("Ваша заявка отправленна"), form.reset(), modal.close()))
+    }
+  })
+  console.log(22)
+};
+
+
 const detailNewsButtons = () => {
   if(!document.querySelector('.i-News__buttons')) return null
   const tabs = [...document.querySelectorAll('.i-News__button')]
@@ -104,7 +143,10 @@ var modal = new tingle.modal({
   stickyFooter: false,
   closeMethods: ['overlay', 'button', 'escape'],
   closeLabel: "Close",
-  cssClass: ['call', 'modal']
+  cssClass: ['call', 'modal'],
+  beforeOpen: function(){
+    modalSend();
+  }
 });
 
 var callBackWrap = () => {
