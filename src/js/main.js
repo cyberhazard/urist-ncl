@@ -47,7 +47,6 @@ const modalSend = () => {
       sendMail(form).then(_ => (alertify.success("Ваша заявка отправленна"), form.reset(), modal.close()))
     }
   })
-  console.log(22)
 };
 
 
@@ -156,12 +155,12 @@ var callBackWrap = () => {
             <div class="SectionTop__form_title">Оставьте заявку:</div>
             <div class="SectionTop__form_elem">
               <div class="SectionTop__form_elem_inner">
-                <input class="SectionTop__form_input" type="text" name="name" placeholder="Ваше имя"/>
+                <input class="SectionTop__form_input" type="text" name="name" placeholder="Ваше имя" required/>
               </div>
             </div>
             <div class="SectionTop__form_elem">
               <div class="SectionTop__form_elem_inner">
-                <input class="SectionTop__form_input" type="tel" name="phone" placeholder="Ваш телефон"/>
+                <input class="SectionTop__form_input" type="tel" name="phone" placeholder="Ваш телефон" required/>
               </div>
             </div>
             <div class="SectionTop__form_elem">
