@@ -246,3 +246,17 @@ void function secondaryMenu() {
   })
   menus.forEach(menu => menu.querySelector('.SecodaryMenu__container').onblur = () => menu.classList.remove('active'))
 }()
+
+void function offshoresTable() {
+  const buttons = [...document.querySelectorAll('.o-Prices__drop')];
+  buttons.forEach(button => button.onclick = (e) => {
+    const data = button.closest('tr').nextElementSibling.querySelector('.o-Prices__description-container');
+    if (button.classList.contains('active')) {
+      button.classList.remove('active');
+      data.classList.remove('active')
+    } else {
+      button.classList.add('active');
+      data.classList.add('active')
+    }
+  })
+}()

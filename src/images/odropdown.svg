@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1D3EDE" offset="0%"></stop>
+            <stop stop-color="#01E4F8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Регистрация-оффшорных-компаний" transform="translate(-441.000000, -923.000000)" fill="url(#linearGradient-1)">
+            <g id="Bg-Color" transform="translate(406.000000, 893.000000)">
+                <g id="🎨-Background-Color" transform="translate(0.000000, -9.000000)">
+                    <g id="Group-15">
+                        <g id="Group" transform="translate(35.000000, 39.000000)">
+                            <g id="Group-2">
+                                <g id="Group-17">
+                                    <path d="M0.823529412,7 C0.823529412,10.4111705 3.58882949,13.1764706 7,13.1764706 C10.4111705,13.1764706 13.1764706,10.4111705 13.1764706,7 C13.1764706,3.58882949 10.4111705,0.823529412 7,0.823529412 C3.58882949,0.823529412 0.823529412,3.58882949 0.823529412,7 Z M7,0 C10.8659932,-8.8817842e-16 14,3.13400675 14,7 C14,10.8659932 10.8659932,14 7,14 C3.13400675,14 8.8817842e-16,10.8659932 0,7 C2.66453526e-15,3.13400675 3.13400675,8.8817842e-16 7,0 Z" id="Radio-Outer" fill-rule="nonzero"></path>
+                                    <polygon id="Shape" opacity="0.539999962" points="9.38518519 5.44444444 7 7.82962963 4.61481481 5.44444444 3.88888889 6.17037037 7 9.28148148 10.1111111 6.17037037"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

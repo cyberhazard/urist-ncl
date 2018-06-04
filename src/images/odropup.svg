@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 18</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1D3EDE" offset="0%"></stop>
+            <stop stop-color="#01E4F8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Регистрация-оффшорных-компаний" transform="translate(-441.000000, -994.000000)">
+            <g id="Group-8" transform="translate(441.000000, 994.000000)">
+                <g id="Group-18">
+                    <circle id="Oval-3" fill="url(#linearGradient-1)" cx="7" cy="7" r="7"></circle>
+                    <polygon id="Shape" fill="#FFFFFF" transform="translate(7.111111, 6.918519) rotate(-180.000000) translate(-7.111111, -6.918519) " points="9.4962963 5 7.11111111 7.38518519 4.72592593 5 4 5.72592593 7.11111111 8.83703704 10.2222222 5.72592593"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
