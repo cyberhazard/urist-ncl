@@ -1,0 +1,44 @@
+.o-Adservices
+  &__heading
+    font-size: 1.6rem
+    font-weight: 600
+    color black
+    letter-spacing: .1rem
+    line-height: 3.9rem
+    text-align center
+  &__top
+    display flex
+    & ^[0]__col
+      font-size: 1.2rem
+      font-weight: 600
+      opacity 0.7
+  &__tr
+    display flex
+  &__col
+    display flex
+    justify-content center
+    align-items center
+    flex 0 0 auto
+    padding 2rem 1.5rem
+    text-align center
+    &:nth-child(1)
+      width 62.5%
+      padding-left 4rem
+      justify-content flex-start
+    &:nth-child(2)
+      width 20.5%
+    &:nth-child(3)
+      flex-grow 1
+  &__tbody
+    border 1px solid RGB(52, 72, 191)
+    & ^[0]__col
+      border-right 1px solid #C6CBD4
+      font-size: 1.2rem
+      font-weight: bold
+      opacity 0.8
+      &:last-child
+        border-right none
+    & ^[0]__tr
+      border-bottom 1px solid #C6CBD4
+      &:last-child
+        border-bottom none
