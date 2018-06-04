@@ -1,0 +1,17 @@
+extends layouts/_main.pug
+
+block vars
+  - const title = 'Регистрация оффшорных компаний'
+
+block content
+  .g-wrapper
+    .Breadcrumbs
+      a.Breadcrumbs__link(href="#") Главная
+      | >
+      a.Breadcrumbs__link(href="#") Новости
+      | >
+      a.Breadcrumbs__link(href="#") Регистрация оффшорных компаний
+    h1.Page__heading
+      include ../images/uk.svg
+      | Регистрация оффшорных компаний
+  include blocks/_o-service.pug
