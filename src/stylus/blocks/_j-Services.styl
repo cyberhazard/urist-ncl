@@ -45,7 +45,7 @@
       &:nth-child(1)
         width 7.477477477%
       &:nth-child(2)
-        text-align-last left
+        text-align left
         width 27.56756757%
       &:nth-child(8)
         width 12.61261261%
@@ -63,6 +63,17 @@
 
 @media (max-width: 768px)
   .j-Services
-    display none
+    & .g-wrapper
+      padding 0 1rem
+    &__table
+      & td:nth-child(n+6),
+      & td:nth-child(1),
+      & th:nth-child(1),
+      & th:nth-child(n+6)
+        display none
+      & th
+        text-align center !important
+      & td:nth-child(2)
+        padding-left 1rem
     &__more
       margin-right 1.2rem
