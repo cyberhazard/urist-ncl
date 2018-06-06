@@ -116,3 +116,29 @@
     opacity 0.8
     cursor pointer
     padding .6rem 2.8rem
+
+@media (max-width: 768px)
+  .o-Prices
+    &__more
+      padding .6rem .8rem
+    & td
+      padding 2rem .6rem
+      &:nth-child(2)
+        text-align center
+    & th:first-child
+      width auto
+
+@media (max-width: 768px)
+  .o-Prices
+    &__more
+      padding .6rem .8rem
+    & td
+      padding 2rem .6rem
+      &:nth-child(2)
+        text-align center
+    & td:nth-child(n+4),
+    & th:nth-child(n+4)
+      display none
+    & th:first-child,
+    & td:first-child
+      display none
